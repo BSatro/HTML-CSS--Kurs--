@@ -1,0 +1,83 @@
+* {
+    margin: 0 auto;
+}
+
+/* root(korzeń) - globalne zmienne dostepne wszędzie */
+:root {
+    --kontener-width: 900px;
+}
+
+#kontener1 {
+    display: block;
+    background-color: red;
+    width: 1000px;
+}
+
+h1 {
+    display: block;
+    background-color: aqua;
+    padding: 10px 0px 10px 25px;
+    border-left: 7px solid black;
+    margin: 10px auto;
+    width: 600px;
+    text-align: center;
+}
+
+#kontener2 {
+    display: block;
+    background-color: red;
+    width: var(--kontener-width);
+}
+
+.link {
+    --link-padding: 25px;
+    --link-border-left: 9px;
+    --link-margin-left: 4px;
+    padding: var(--link-padding);
+    border-left: var(--link-border-left) solid antiquewhite;
+    margin-left: var(--link-margin-left);
+    box-sizing: border-box; /*  */
+    width: calc(var(--kontener-width) / 6 - var(--link-margin-left));
+    
+    display: inline-block;
+    background-color: aqua;
+    text-align: center;
+}
+
+#sample {
+    width: var(--kontener-width);
+    
+    --sample-height: 15px;
+    height: var(--sample-height);
+    font-size: var(--sample-height);
+    
+    background-color: blue;
+    color: white;
+}
+
+#kontener3 {
+    position: relative;
+    background-color: rgb(60, 58, 58);
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+    --konetner3-height: 200px; 
+    --kontener3-padding: 20px;
+
+    width: 1000px;
+    height: var(--konetner3-height);
+    padding: var(--kontener3-padding);
+}
+
+#kontener3 address {
+    color: wheat;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#kontener3 img {
+    --kontener3-img-size: calc(var(--konetner3-height) - 2 * var(--kontener3-padding));
+    height: var(--kontener3-img-size);
+    width: var(--kontener3-img-size);
+}

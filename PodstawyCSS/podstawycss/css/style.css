@@ -1,0 +1,274 @@
+html {
+    font-size: 16px;   /*   Zawsze tyle jest    */
+}
+
+body {
+    background-color: antiquewhite;
+    background-image: url(../images/main-image.jpg);
+    background-size: 100%;
+    background-repeat: unset;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+#adres-domowy {
+    color: red;
+}
+
+.input-text {
+    width: 50px;
+}
+
+#zamowienie .input-text {
+    color: blue;
+}
+
+#koszyk .input-text {
+    color: red;
+}
+
+.larger {
+    font-size: larger;
+}
+
+#tresc, .text {
+    background-color: aqua;
+}
+
+span {
+    color: red;
+}
+
+.text {
+    width: 800px;
+    text-align: center;
+}
+
+#tresc {
+    text-align: center;
+}
+
+.type1 {
+    background-color: red;
+    display: block;
+}
+
+.type2 {
+    background-color: green;
+    display: inline;
+}
+
+.type3 {
+    background-color: blue;
+    display: inline-block;
+    width: 220px;
+    height: 200px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td{
+    padding: 10px;
+}
+
+caption, table th {
+    padding: 5px;
+    font-size: 24px;
+}
+
+table tr {
+    border-bottom: 1px solid black;
+}
+
+
+
+/* div
+{
+    margin: 10px;
+} */
+
+/* Rodzaje obramowań */
+.obramowania div{
+    background-color: transparent;
+    margin: 10px;
+}
+
+.none {border-style: none;}
+.dotted {border-style: dotted;}
+.dashed {border-style: dashed;}
+.solid {border-style: solid;}
+.double {border-style: double;}
+.groove {border-style: groove;}
+.ridge {border-style: ridge;}
+.inset {border-style: inset;}
+.outset {border-style: outset;}
+.mix {
+   width: 300px;
+   border-bottom: 1px solid darkgreen;
+}
+
+.definicja {
+    border-left: 5px solid crimson;
+    background-color:darkgray;
+}
+
+.definicja2 {
+    border: 1px solid chocolate;
+    border-left-width: 5px;
+    border-top-style: none;
+    border-right-style: none;
+    width: 300px;
+}
+
+.definicja3 {
+    border-style: none none double solid;
+    width: 300px;
+    text-align: center;
+}
+
+
+/* Zaokrąglenia */
+.zaokraglenie {
+    border-left: 5px solid crimson;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.okrag {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#dymek {
+    background-color: azure;
+    width: 300px;
+    text-align: center;
+    border-radius: 60px 10px 90px 30px;
+    padding: 30px;
+}
+
+
+/* Odnośniki do podstron */
+#menu a:link, #menu a:visited {
+    text-decoration: none;
+    color: black;
+    border: 1px solid deepskyblue;
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+#menu a:hover {
+    background-color: deepskyblue;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* ul {
+    list-style-image: url("../images/tick.png");
+} */
+
+
+/* Lista z obrazkiem */
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+    content: "\2713\00A0";
+    color: darkgoldenrod;
+}
+
+ol {
+    list-style-type: upper-alpha;
+}
+
+/* Przeźroczyste tło */
+a img {
+    background-color: rgba(240, 248, 255, 0);  /* To jest przeźroczyste tło */
+    opacity: 0.7;
+}
+
+a img:hover {
+    opacity: 1;
+}
+
+
+
+/* Zmiana kursora */
+span {
+    background-color: transparent;
+}
+
+[data-help] {
+    cursor: help;
+}
+
+[data-help]:hover {
+    font-weight: bold;
+}
+
+[data-help]:hover::after {
+    content: attr(data-help);
+    background-color: rgba(0, 255, 94, 0.605);
+    padding: 15px;
+    position: absolute;
+    border-radius: 20px;
+}
+
+
+/* Działania na tekst */
+.przyklad {
+    /* Czcionki  ~safe fonts*/
+
+    /* font-variant: small-caps; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+        /* safe fonts */
+    /* https://fonts.google.com/ - niestandardowe czcionki */
+    font-style: oblique;
+    /* wymuszona kursywa - oblique */
+    font-weight: 400;
+    /* można to wszystko dać w jednym font: ...; */
+
+
+    border: 1px solid black;
+    width: 50%;
+    padding: 3px;
+    text-transform: capitalize;
+    text-align: justify;
+    text-decoration: underline dotted blueviolet;
+    text-indent: 30px;
+    line-height: 1.4em;
+    word-spacing: 0.1em;
+    letter-spacing: 0.2em;
+}
+
+.przyklad::first-letter {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

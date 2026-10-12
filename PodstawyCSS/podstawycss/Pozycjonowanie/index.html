@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Pozycjonowanie elementów na stronie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--  Marginesy  -->
+      <!-- 
+        USTALAMY WEDŁUG 🕰️ OD GÓRY
+        margin - odstęp
+        padding - wypełnienie 
+        border - obramowanie
+
+        box model
+      -->
+
+    <div id="kontener1">
+        <h1>Przyjemne rzeczy schowane są za bólem</h1>
+    </div>
+    <p>Przykładowy tekst</p>
+
+    <br><br><br>
+
+    <!-- width + padding-left|right + border-left|right + margin-left|right -->
+    <div id="kontener2">
+
+       <div class="link">Produkty</div><!--
+    --><div class="link">Informacje</div><!--
+    --><div class="link">Kontakt</div><!--
+    --><div class="link">Produkty</div><!--
+    --><div class="link">Informacje</div><!--
+    --><div class="link">Kontakt</div>
+    
+    </div>
+
+    <div id="sample">Przyklad</div>
+
+    <br><br><br>
+
+    <!-- Pozycjonowanie -->
+    <!-- 
+      static - statyczne (nieruchomy/domyślny)
+      relative - względne (względem siebie coś przesuwamy, ale zajmuje miejsce w którym był)
+      abosolute - bezwzględny/niezależny (nie bierze pod uwagi scrolla)
+      fixed - ustalony
+
+      top - od góry
+      right - od prawej
+      bottom - od dołu
+      left - od lewej
+
+    -->
+
+    <div id="kontener3">
+      <img src="../images/bagietson.png" alt="bagietson" width="225" height="225">
+      <address>
+        Bartłomiej Satro <br>
+        505 748 251 <br>
+        Bartłomiej Satro <br>
+        505 748 251 <br>
+        Bartłomiej Satro <br>
+        505 748 251 <br>        
+      </address>
+    </div>
+
+
+</body>
+</html>

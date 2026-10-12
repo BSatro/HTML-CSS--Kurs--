@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pl" style="scroll-behavior: smooth;"> 
+
+<head>
+    <meta charset="UTF-8"> 
+    <title>Style CSS</title>
+
+    <meta name="description" content="Wielu ludzi marzy o osiągnięciu czegoś w życiu, ale nie każdy potrafi naprawdę zacząć żyć."> 
+    <meta name="keywords" content="kocik, koksik, koks"> 
+    <meta name="author" content="Bartłomiej Satro"> 
+    <meta name="robots" content="index, follow"> 
+
+    <!--Ikona wyświetlana na stronie-->
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg">
+    <link rel="shortcut icon" href="../favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Kocik">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+
+ 
+    <!-- 
+        CSS - Cascade Style Sheets - Kaskadowe Arkusze Stylów
+    -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">   
+    <!-- 
+    rel - relation - relacja
+    stylesheet - arkusz styli
+    -->
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <!--
+    id = #      JEDEN
+    class = .   WIELE 
+    -->
+    <p class="center" style="color: purple;">To jest testowy tekst</p>
+    <p class="center">To jest testowy tekst</p>
+    <p class="center larger">To jest testowy tekst</p>
+    <p class="center">To jest testowy tekst</p>
+    <p class="center">To jest testowy tekst</p>
+
+    <address id="adres-domowy" class="center larger">Bort</address>
+
+
+    <form id="zamowienie">
+        <input class="input-text" type="text" name="" id="">
+        <input class="input-text" type="text" name="" id="">
+        <input class="input-text" type="text" name="" id="">
+    </form>
+
+    <form id="koszyk">
+        <input class="input-text" type="text" name="" id="">
+        <input class="input-text" type="text" name="" id="">
+        <input class="input-text" type="text" name="" id="">
+    </form>
+
+
+     
+    <br><br><br>
+
+
+
+    <!-- Elementy blokowe -->
+    <!-- 
+    div         vs          span
+    divison(podział)        rozpiętość/zakres
+
+    block                   inline
+        oboje są neutralnymi tagami
+
+    display: block
+             inline
+             inline-block
+    -->
+    <div id="tresc">
+    Konrad Kondziowski <br>
+    stan cywilny: <span title="od jakiegos czasu">samotnik</span>
+    </div>
+    <div class="text">Testowy tekst</div>
+    <div class="text">Testowy tekst</div>
+    <div class="text">Testowy tekst</div>
+    <div class="text">Testowy tekst</div>
+    <div class="text">Testowy tekst</div>
+    
+    <!-- .type1*3{block} -->
+    <div class="type1">block</div>
+    <div class="type1">block</div>
+    <div class="type1">block</div>
+
+    <div class="type2">inline</div>
+    <div class="type2">inline</div>
+    <div class="type2">inline</div><br>
+    
+    <div class="type3">inline-block</div>
+    <div class="type3">inline-block</div>
+    <div class="type3">inline-block</div>
+
+    
+
+    <br><br><br>
+
+
+
+    <!-- Selektory zapisane w .css -->
+    <table>
+        <caption>Selektory</caption>
+        <tr>
+            <th>Selektor</th>
+            <th>Wyjaśnienie</th>
+        </tr>
+        <tr>
+            <td>p</td>
+            <td>wybierz wszystkie elementy <b>p</b>.</td>
+        </tr>
+        <tr>
+            <td>.foo</td>
+            <td>wybierz wszystkie elementy z class='<b>foo</b>'.</td>
+        </tr>
+        <tr>
+            <td>#identyfikator</td>
+            <td>wybierz wszystkie elementy o <b>id</b>='#identyfikator'.</td>
+        </tr>
+        <tr>
+            <td>div, p</td>
+            <td>wybierz wszystkie elementy <b>div</b> oraz <b>p</b>.</td>
+        </tr>
+        <tr>
+            <td>div p</td>
+            <td>wybierz wszystkie elementy <b>p</b> znajdujące się w <b>div</b>'ie.</td>
+        </tr>
+        <tr>
+            <td>div .foo</td>
+            <td>wybierz wszystkie elementy z class='<b>foo</b>' znajdujących się w <b>div</b>'ie.</td>
+        </tr>
+        <tr>
+            <td>div p.foo</td>
+            <td>wybierz wszystkie elementy <b>p</b> których class='<b>foo</b>' i znajdują się w <b>div</b>'ie.</td>
+        </tr>
+        <tr style="color: gray !important;">
+            <td>*</td>
+            <td>wybierz wszystkie elementy znajdujące się na stronie.</td>
+        </tr>
+    </table>
+    
+
+
+    <br><br><br>
+
+
+
+    <!-- Obramowanuie -->
+    <!-- 
+        Zasada zegarkowa: góra, prawo, dół, lewo
+        border-style: 1px  // 1px = wszystko
+        border-style: 1px 3px  // 1px = góra i dół  |  3px = lewo i prawo
+        border-style: 1px 2px 3px 4px  // =góra, dół, prawo, lewo
+    -->
+
+    OBRMOWANIA
+    <hr>
+    <section class="obramowania">
+    <div class="none">Brak obramowania (domyślne): none</div>    
+    <div class="solid">Solidna linia: solid.</div>    
+    <div class="dotted">Seria kropek: dotted.</div>
+    <div class="dashed">Seria kresek: dashed</div>
+    <div class="double">Podwójna linia: double</div>
+    <div class="groove">Wcięcie, efekt wyrzeźbienia: groove</div>
+    <div class="ridge">Odwrotność groove: ridge</div>
+    <div class="inset">Efekt "zapadnięcia": inset</div>
+    <div class="outset">Efekt "wysunięcia" (przeciwieństwo inset): outset</div>
+    <div class="mix">Mix - można mixować wszystko ;&rpar;.</div>
+    <div class="definicja">Świat jest okrągły!!!</div>
+    <div class="definicja2">Świat jest okrągły!!!</div>
+    <div class="definicja3">To jest ostateczna definicja</div>
+    <br><br>
+
+    </section>
+    <hr>
+
+
+
+    <br><br><br>
+
+
+
+    <!-- Zaokrąglenia -->
+    <!-- 
+        border-radius - promień obramowania
+        
+        od lewej górnej(x) do prawej i jak zegarek
+        x1  o2             1px  2px
+        o4  o3             4px  3px
+        
+        border-radius: 1px 2px  // 1px = lewyG, prawyD | 2px = prawyG, lewyD
+    -->
+    <div class="zaokraglenie">Okrągły nie kanciasty</div>
+    <input type="text" class="okrag"><input type="text" class="okrag"><input type="text" class="okrag">
+
+    <div id="dymek">Zadymka siusiusiu</div>
+
+
+
+    <br><br><br>
+
+
+
+    <!-- Odnośniki do podstron -->
+    <!-- 
+        link - nieodwiedzony
+        visited - odwiedzony
+        hover - hand over
+        active - aktywny (w momencie klikania)
+
+        display inline
+    -->
+    <div id="menu">
+    <a href="../artykuly/podstrona1">Podstronicka</a>
+    <a href="../artykuly/podstrona2">Podstronicka</a>
+    <a href="../artykuly/podstrona3">Podstronicka</a>
+    <a href="../artykuly/podstrona4">Podstronicka</a>
+    </div>
+
+    <a href="../artykuly/podstrona5">Podstronicka</a>
+
+
+
+    <br><br><br>
+
+
+
+    <!-- Styl listy -->
+    <!-- obrazek png 12px    https://paint.net/ -->
+    <!-- emotki: https://www.w3schools.com/html/html_emojis.asp  -->
+    <ul>
+        <li>Krótka wiadomość 1</li>
+        <li>Krótka wiadomość 2</li>
+        <li>Krótka wiadomość 3</li>
+    </ul>
+
+    <ol>
+        <li>Krótka wiadomość 1</li>
+        <li>Krótka wiadomość 2</li>
+        <li>Krótka wiadomość 3</li>
+    </ol>
+
+
+
+    <br><br><br>
+
+
+
+    <!-- Przeźroczystość -->
+    <!-- 
+        opacity 
+        rgba
+    -->
+
+    <a href="video-kurs-csharp.html"><img src="images/video-kurs-csharp.png" alt="Video Kurs C#" width="200" height="202"></a>
+    <a href="video-kurs-java.html"><img src="images/video-kurs-java.png" alt="Video Kurs Java" width="200" height="202"></a>
+    <a href="video-kurs-php.html"><img src="images/video-kurs-php.png" alt="Video Kurs PHP" width="200" height="202"></a>
+    <a href="video-kurs-seo.html"><img src="images/video-kurs-pozycjonowania.png" alt="Video Kurs SEO" width="200" height="202"></a>
+
+
+
+    <br><br><br>
+
+
+
+    <!-- Zmiana kursora 🐭 -->
+    <!-- 
+        attr - attribute
+    -->
+
+    <span data-help="To jest pomocna informacja">Help me!</span>
+    <span data-help="Inna pomocna informacja">Help me!</span>
+    <span data-help="Jeszcze inna pomocna informacyjka">Help me!</span>
+    <br>
+    <span data-help="Elo panelo" ><img src="images/bagietson.png" alt="Bagietson"></span>
+
+
+
+    <br><br><br><br><br>
+  
+
+
+    <!-- Działania na tekst -->
+    <!-- 
+        text-transform: ...; - wielkość liter 
+        text-align: ...; - gdzie umieszczony
+        
+        text-decoration: ...;  [line] [style] [color]
+
+        white-space: ...;
+            pre-line - dla zwykłego tekstu
+            pre-wrap - dla kodu
+
+        text-indent: ...; - wcięcie pierwszej lini tekstu
+        ::first-letter - działania na pierwszą literę
+    -->
+
+    <p class="przyklad">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at auctor purus,
+    sit amet pharetra tellus. Fusce ac lacinia nulla, et facilisis lacus. Nunc condimentum,
+    mi a dictum fringilla, tellus quam convallis mi, finibus consequat lectus neque sed purus.
+    Phasellus porta vehicula ligula, sit amet semper erat pharetra et.Vestibulum eu bibendum nisl.
+    Integer sodales nisi eros. Cras fringilla laoreet dui. Etiam finibus euismod odio, non tempus leo sagittis nec.
+    Cras ultricies ultrices velit. Nulla euismod mauris lorem, nec convallis arcu luctus ut.
+    Vestibulum suscipit elit ac ex cursus, vitae porttitor sapien condimentum.
+    Donec fringilla ultricies urna, at mattis metus placerat gravida.
+    Quisque tincidunt sagittis turpis, in bibendum enim efficitur sed. Mauris quis purus elit.    
+    </p>
+
+    <!-- Jednostki -->
+    <!-- 
+        px  |   em   |   %
+              rodzic
+    -->
+
+    
+    <!-- Odstępy pomiędzy wyrazami -->
+     <!-- 
+        line-height - wysokość pomiędzy liniami
+        word-spacing - odległość między wyrazami w lini
+        letter-spacing - odległóść między każdą literą
+     -->
+
+
+</body>
+
+</html>

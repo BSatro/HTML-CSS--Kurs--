@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pl" style="scroll-behavior: smooth;"> <!-- atrybut (lang)- dodatkowa informacja(w tym przypadku mówi o języku strony) -->
+    <!-- języki kodowania strony: https://www.w3schools.com/tags/ref_language_codes.asp -->
+
+<head>
+    <meta charset="UTF-8"> <!-- kodowanie polskich znaków -->
+    <title>Pierwsze poznane elementy</title>
+    <!-- Meta tagi = (meta dane - informacje o danych) -->
+    <meta name="description" content="Wielu ludzi marzy o osiągnięciu czegoś w życiu, ale nie każdy potrafi naprawdę zacząć żyć."> <!-- opis strony -->
+    <meta name="keywords" content="kocik, koksik, koks"> <!-- kluczowe hasła dzięki, którym twoja strona się lepiej pozycjonuje (teraz nie jest to postrzegane) -->
+    <meta name="author" content="Bartek Esz"> <!-- informacja o autorze -->
+    <meta name="robots" content="index, follow"> <!-- mówi robotom odwiedzającymi stronę, co muszą z nią zrobić -->
+
+    <!-- Ikona wyświetlana na karacie strony i w aplikacji  -->
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Kocik">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <!-- https://realfavicongenerator.net GENERATOR IKON -->
+
+</head>
+
+<body style="background-color: rgb(39, 100, 129);">
+    <!-- dobrze dobrane kolory na strone: https://www.w3schools.com/colors/colors_schemes.asp
+                                          https://www.realtimecolors.com/?colors=000000-ffffff-4685ff-f2f2f2-ffb084&fonts=Inter-Inter-->
+
+    <a href="/"><img src="images/logo.jpg" alt="logo" width="246" height="250"></a>
+
+
+    <p><i>Zawartość napisana kursywą</i></p> <!-- <i>Italic - Kursywa   <p>Paragraph - akapit 
+                                             Ctrl + Shift + P === skróty w VS --> 
+
+    <p><b><i>Pogrubiony i kursywa</i></b></p> <!-- b - bold -->
+
+    <!-- <br>Break - złamać(linię) -->
+    <p>Jan Jankowski<br>
+        stan cywilny: <span title="od zawsze">singiel</span></p> <!-- atrybut title pokazuje dymek po najechaniu na tekst -->
+        <!-- <span> nic nie robi, ale jest potrzebny gdy chcemy dodać jakiś atrybut -->
+ 
+ 
+
+    <img src="../images/kotik-morski.jpg" alt="Kocik" width="600" height="400"> <!-- src - source, alt - alternative -->
+        <!-- ../ - wychodzimy z bierzącego folderu -->
+    <br>
+
+
+
+    <!-- Listy -->
+    Dlaczego jesteś super?
+    <ol>
+        <li>Bo jesteś świetny</li>
+        <li>Bo jesteś najlepszy</li>
+        <li>Bo jesteś piękny</li>
+    </ol>
+
+    <ul>
+        <li>Bo jesteś świetny</li>
+        <li>Bo jesteś piękny</li>
+        <li>Bo jesteś najlepszy</li>
+    </ul>
+
+    <!-- Skrót emmet: (ol[title="ok"]*2>li{treść$}*4)+ul[title="ok"]*2>li{treść$}*4 -->
+    <ol title="ok">
+        <li>treść1</li>
+        <li>treść2</li>
+        <li>treść3</li>
+        <li>treść4</li>
+    </ol>
+    <ul title="ok">
+        <li>treść1</li>
+        <li>treść2</li>
+        <li>treść3</li>
+        <li>treść4</li>
+    </ul>
+    <!--  
+     ol - ordered list 
+     ul - unordered list
+     li - list item 
+    --> 
+
+
+
+    
+    <!-- Encje -->
+    &lt;b> - służy do pogrubiania tekstu <!-- dzięki nim nie stworzy się <b>  -->
+    <br>
+    5 &lt 7  <!-- &lt = <  -->
+
+    <p>Aha okej <span title="&quot;jak zawsze&quot; - powiedział Koleś">kocik</span></p> <!-- &quot = " , &apos = ' , -->
+                       <!-- '"jak zawsze" - powiedział Koleś'   można też tak ale to zależy -->
+    <!-- Wszystkie encje: https://symbl.cc/pl/html-entities/  -->
+    
+
+    <!-- Wyjaśnienie pojęcia -->
+    <!-- Skrót emmet: dl>(dt+dd)*5 -->
+    <dl> <!-- definition list -->
+        <dt>&lt;p></dt> <!-- definition term (wyrażenie/określenie) -->
+        <dd>z ang. <b>p</b>aragraph - czyli akapit</dd> <!-- definition description (opis) -->
+
+        <dt>&lt;br></dt>
+        <dd>z ang. <b>br</b>eak - służy do użycia klawisza "Enter" na stronie</dd>
+        
+        <dt>&lt;body></dt>
+        <dd>Określa ciało strony. Zamieszczamy w nim jej treść</dd>
+        
+        <dt>&lt;head></dt>
+        <dd>Służy do omówienia informacji o zawartości naszej strony</dd>
+
+        <dt>&lt;title></dt>
+        <dd>Służy do nadania tytułu strony</dd>
+    </dl>
+
+
+
+    <!-- Linki -->
+    <a href="../artykuly/podstrona1.html">Podstrona</a>
+    <a href="http://google.pl" target="_blank" rel="noopener noreferrer">Google</a>
+    <!-- 
+    a - anchor - kotwica
+    href - hyper reference - nadzwyczajne odniesienie
+    -->
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <p id="post">To jest post na forum</p>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+    <!-- Kontakt -->
+    <address>
+        Bartłomiej Satro <br>
+        <a href="tel:+48505748251">505 748 251</a> <br>
+        <a href="mailto:satrobartek1@gmail.com?subject=Zapytanie ze strony">satrobartek1@gmail.com</a>
+    </address>
+
+
+
+    <!-- Nagłówki -->
+     <!-- 
+        h1-..-h6 - header
+     -->
+
+    <h1>Podstawy Tworzenia stron - krótko i zwięźle</h1>
+
+        <h2>Czym jest HTML?</h2>
+            <p>HTML to z ang. Hypertext MarkUp Language. Jest to języków tagów (znaczników).</p>
+
+        <h3>Czym są tagi?</h3>
+            <p>Tag to znacznik, służy do zaznaczania tekstu. Nadaje tekstowi określone z góry znaczenie.</p>
+        
+        <h3>Czym są atrybuty?</h3>
+            <p>Atrybut to dodatkowa informacja o tagu. Niektóre tagi mogą mieć potrzebę umiejscowienia dodatkowej cechy dla tagu. Dzięki atrybutom jesteśmy w stanie taką cechę dodać.</p>
+
+        <h2>Czym jest CSS?</h2>
+            <p>CSS to język umożliwiający zmianę z jednego miejsca wyglądu wszystkich tagów na stronie. Korzystamy z niego, aby...</p>
+        
+        <h3>Czym jest selektor?</h3>
+            <p>Selektor to operator, pozwalający wyselekcjonować(wybrać) ze strony konkretne tagi, które nas interesują, aby je później ostylować (nadać wyglądu).</p>
+        
+        <h3>Jak dołączyć plik CSS na stronie?</h3>
+            <p>Aby dołączyć plik na stronie należy w sekcji head skorzystać z tagu &lt;link&gt;</p>
+        
+    <!-- 
+    h${Tekst $}*6 EMMET
+
+    <h1>Tekst 1</h1>
+    <h2>Tekst 2</h2>
+    <h3>Tekst 3</h3>
+    <h4>Tekst 4</h4>
+    <h5>Tekst 5</h5>
+    <h6>Tekst 6</h6>
+    -->
+
+
+
+    <br><br><br><br><br>
+
+
+
+    <!-- Cytowanie -->
+    <p>
+        <cite> Albert Einstein </cite>
+        <blockquote>&bdquo;Wiadomo, że taki a taki pomysł jest nie do zrealizowania. Ale żyje sobie jakiś nieuk, który o tym nie wie. I on właśnie dokonuje tego wynalazku.&rdquo;</blockquote>
+    </p>
+    <p>Adam powiedział: <q>Przekaż jej, że jej nie lubię</q></p>
+    <p>
+        <q cite="">Lepiej zaliczać się do niektórych, niż do wszystkich.</q>
+    </p>
+    <!-- q - quote - cytat -->
+
+
+
+    <br><br><br><br><br>
+
+
+
+    <!-- 
+        abbr - abbrevation - skrót
+        dfn - define - definiować
+    -->
+    <p>
+        <dfn><abbr title="Hypertext Markup Language">HTML</abbr></dfn> to język znaczników do tworzenia stron WWW.
+    </p>
+    
+    
+
+    <br><br><br><br><br>
+
+
+
+    <u>Podkreślony tekst</u>
+    <s>Przekreślony tekst</s>
+        <!-- Tagi semantyczne -->
+        <!-- 
+        <strong>          'silny'                         (formatowanie DOMYŚLNE <b>)
+        <em> - emphasis   'podkreślenie/akcent/nacisk'    (formatowanie DOMYŚLNE <i>)
+        <mark> - 'oznaczyć markerem' z pomocą domyślnie żółtego koloru.  
+        -->
+        
+    <p>
+         <em>Uwielbiam</em> koty i psy.
+    </p>
+
+    <p>
+         Uwielbiam koty <em>i</em> psy.
+    </p>
+    
+    <p>
+         Zanim to zrobisz to upewnij się, że <strong>przeczytasz instrukcję obsługi</strong>.
+    </p>
+
+    <p>
+        <mark>CSS</mark> jest odpowiedzialny za <strong>wygląd</strong> Twojej strony internetowej.
+    </p>
+
+    <p>
+         <dfn><abbr title="Cascading Style Sheets"><strong>CSS</strong></abbr></dfn> to z ang. <b>C</b>ascading <b>S</b>tyle <b>S</b>heets czyli Kaskadowe Arkusze Stylów.
+    </p>
+
+
+
+    <br><br><br>
+
+
+
+    <!-- 
+        sub - subscript - indeks dolny
+        sup - superscript - indeks górny
+    -->
+    <p>Indeks dolny i indeks górny</p>
+    H<sub>2</sub>O &nbsp;&nbsp;&nbsp;
+    x<sup>2</sup>=0    
+
+        
+
+    <br><br><br>
+
+
+
+    <!--
+        pre - pre formatted (sformatowany tekst przed wklejeniem)
+        code - tag używany do oznaczenia kodu (by odróżnić go od tekstu)
+        var - variable (zmienna) - do pokazania, że w tekście jest zmienna
+        
+        ctrl + h  - dzięki temu skrótowi możemy podmieniać wiele rzeczy w danym obrębie np. < na &lt
+    -->
+<pre>
+<code>
+    <!-- #include <iostream>
+    #include <vector>
+    #include <typeinfo>
+    
+    using namespace std;
+    
+    int main()
+    {
+    
+        vector<int> wholeNumbers {20, 10, 4, -3, 25};
+    
+        double nrOfPeople = 20.5;
+    
+        cout << nrOfPeople << endl;
+        cout << typeid(nrOfPeople).name() << endl;
+    
+    
+        for(auto it = wholeNumbers.begin(); it != wholeNumbers.end(); it++)
+        {
+            cout << *it << endl;
+        }
+    
+    
+        return 0;
+    } -->
+</code>
+</pre>
+        
+    <p>Liczba 70 jest o 40% większa od liczby <var>c</var>. Jaką wartość ma liczba <var>c</var>?</p>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <!--
+        Formularz - dokument z polami do wypełnienia
+
+        input : in - w, put - położyć
+        fieldset - zbiór(zestaw) pól
+        legend - opis dla fieldset
+        label - etykieta
+        
+
+        Atrybuty używane w Formularzach:
+
+        checked
+        required
+        autofocus
+        autocomplete
+        size
+        maxlength
+        value
+        placeholder
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input
+    -->
+    <form action="login.php" method="post">
+        Login: <input type="text" name="login"><br>
+        Hasło: <input type="password" name="pw"><br>
+        
+        <input type="submit" value="Zaloguj się">
+    </form>
+<br><br><br>
+
+
+    <form action="ankieta.php" method="post">
+        <fieldset>
+            <legend>Ile masz lat?</legend>
+            <!-- 
+            name - po przesłaniu serwer wie do jakiego pytania należy odpowiedz
+            value - po przesłaniu serwer wie jaka została wybrana opcja
+            -->
+            <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa1" value="7-18"><label for="kategoria_wiekowa1">7-18</label>
+            <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa2" value="19-29"><label for="kategoria_wiekowa2">19-29</label>
+            <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa3" value="30-39"><label for="kategoria_wiekowa3">30-39</label><br>
+        </fieldset>     
+
+        <fieldset>
+            <legend>Jakie jest Twoje hobby?</legend>
+
+            <label><input type="checkbox" name="hobby" id="plywanie" value="plywanie">pływanie</label>   
+            <input type="checkbox" name="hobby" id="programowanie" value="programowanie"><label for="programowanie">programowanie</label>
+            <input type="checkbox" name="hobby" id="gry_komputerowe" value="gry_komputerowe"><label for="gry_komputerowe">gry komputerowe</label>
+        </fieldset>      
+
+        Ilość jednostek: <input type="text" autocomplete="off" size="3" maxlength="1" placeholder="1-9" value="1" autofocus> szt.
+        Hasło: <input type="password">
+        Nr domu: <input type="text" required>
+        Nr mieszkania: <input type="text">
+        <input type="submit" value="Wyślij">
+    </form>
+<br><br><br>
+
+
+    <!-- Zadanko -->
+    <form action="kontakt.php" method="post">
+        <fieldset>
+            <legend>Skontaktuj się z nami</legend>
+            <label for="email">E-mail: </label><input type="email" name="email" id="email" placeholder="@" required><br>
+            <label for="imie">Imię: </label><input type="text" name="imie" id="imie" required><br><br>
+            <label for="temat">Temat: </label><input type="text" name="temat" id="temat" required><br><br>
+
+            <label for="tresc">Treść:</label><br>
+            <textarea name="tresc" id="tresc" rows="10" cols="30" placeholder="Jak możemy Ci pomóc?"></textarea><br> 
+
+            <input type="submit" value="Wyślij">
+        </fieldset>
+    </form>
+<br><br><br> 
+
+
+    <!-- Data i czas -->
+    <!-- 
+        date, time   -   min, max
+    -->
+    <form action="czas.php">
+        <label for="wiadomosc">Wiadomość: </label><br>
+        <textarea name="wiadomosc" id="wiadomosc"></textarea><br>
+        <label for="data">Kiedy wysłać do ciebie tą wiadomość?</label><br>
+        <input type="date" min="2025-07-01" max="2025-07-15" value="2025-07-01">
+        <input type="time">
+        <input type="submit" value="Wyślij">
+    </form>
+<br><br><br>
+
+
+    <!-- Tabela -->
+    <!-- 
+        tr - table row
+        td - table data  -  cell(komórka)
+        th - table header
+        caption
+
+        Rozpiętość komórki:
+        rowspan - w pionie
+        colspan - w poziomie
+    -->
+
+    <table border="1px" style="border-collapse: collapse;">
+        <caption>Video Kursy</caption>
+        <thead>
+            <tr>
+                <th>Kategoria</th>
+                <th>Nazwa</th>
+                <th>Cena(zł)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Programowanie</td>
+                <td>C++</td>
+                <td>49</td>
+            </tr>
+            <tr>
+                <td>Php</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>45</td>
+            <tr>
+                <td rowspan="4">WWW</td>
+                <td>HTML</td>
+                <td>49</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>node.js</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">kursy w j.polskim</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- table>(tr>td{Zawartość$}*5)*3 -->
+
+
+
+    <br><br><br><br><br>
+
+    <a href="#top">Do góry</a>
+    <a href="#post">Skok do postu</a>
+
+</body>
+
+</html>

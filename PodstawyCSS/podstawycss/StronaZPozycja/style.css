@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#kontener {
+    margin: 0 auto;
+    width: 1000px;
+    box-sizing: border-box;
+}
+
+#doGory {
+    position: fixed;
+    background-color: rgba(0, 128, 128, 0.752);
+    width: 120px;
+    padding: 30px;
+    right: 50px;
+    bottom: 10px;
+    
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(50, 212, 158);
+}
+
+#doGory:hover {
+    background-color: rgba(0, 128, 128);
+}
+
+#top {
+    position: relative;
+    background-color: rgb(48, 47, 47);
+    padding: 30px;
+
+    --top-height: 200px; 
+    height: var(--top-height);
+}
+
+#top address {
+    text-align: right;
+    color: wheat;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#top address::first-line {
+    color: rgb(244, 198, 112);
+}
+
+#top a:link, a:visited {
+    text-decoration: underline;
+    color: wheat;
+}
+
+#top img {
+    height: var(--top-height);
+    width: var(--top-height);
+}
+
+/* Menu ciągnące się */
+#menu {
+    position: sticky;
+    top: 0;
+    background-color: #bf9003;
+    padding: 15px;
+    margin: 1px 0px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#menu > ul > li > a {
+    padding: 20px 0;
+    margin-left: 10px;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu ul li {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+/* Menu rozwijane */
+.submenu {
+    padding: 0;
+    position: absolute;
+    top: 40px;
+    display: none;
+}
+
+#menu ul li:hover .submenu {
+    display: block;
+}
+
+.submenu::before {
+    content: '';
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: -10px;
+}
+
+.submenu a {
+    background-color: #d2a009fb;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    width: 100px;
+}
+
+.submenu a:hover {
+    background-color: #d2a009dd;
+}
+
+
+#main {
+    background-color: #ececec;
+    padding: 15px 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+#main h3 {
+    font-weight: 600;
+}
+
+#main span {
+    color: rgb(175, 172, 172);
+}
+
+#photo1 {
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+

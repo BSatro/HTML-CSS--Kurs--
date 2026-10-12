@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Pierwsza "jakaś" strona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="kontener">
+
+    <div id="top">
+        <img src="../images/logo.png" alt="logo" width="1024" height="1024">
+        
+        <address>
+            Kontakt: <br>
+            Kto stworzył?:  <u>Bartłomiej Satro</u> <br>
+            Mail: <a href="mailto:satrobartek1@gmail.com">satrobartek1@gmail.com</a> <br>
+            Or call me maybe: <a href="tel:+48505748251">505 748 251</a>
+        </address>
+    </div>
+    
+
+    <div id="menu">
+        <ul>
+            <li>
+                <a href="#">Języki prezentacji stron internetowych</a>
+                <ul class="submenu">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Języki programowania</a>
+                <ul class="submenu">
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Java</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <img src="../images/photo1.png" alt="photo1" id="photo1" width="896" height="896">
+        <h1>Programowanie stron internetowych</h1><br>
+        <p><br>
+        Od zawsze fascynowało mnie, jak działają strony internetowe. Z czasem odkryłem, że mogę je tworzyć samodzielnie, korzystając z HTML i CSS. To moje hobby,
+        które sprawia mi ogromną frajdę i pozwala rozwijać kreatywność. Na tej stronie opowiem, czym jest HTML i CSS, dlaczego lubię programowanie i pokażę moje pierwsze projekty.
+        </p>
+
+        <h2 style="clear: both;">Czym jest HTML i CSS?</h2><br>
+        
+        <div id="html">
+            <h3>HTML:</h3>
+            <p>Jest to język, który buduje „szkielet” każdej strony internetowej.
+            Dzięki niemu możemy dodawać nagłówki, akapity, linki, obrazki czy listy.<br>
+            Przykład:</p>
+            <fieldset>
+            &lt;h1>Witaj na mojej stronie!&lt;/h1> <span>- tym budujemy nagłówek</span><br>
+            &lt;p>To jest mój pierwszy akapit.&lt;/p> <span>- tym budujemy akapit</span><br>
+            &lt;a href="https://google.com">Kliknij tutaj a przeniesie cię na google&lt;/a> <span>- tym budujemy link do zewnętrznej strony</span>
+            </fieldset>
+        </div>
+
+        <br><br>
+
+        <div id="css">
+            <h3>CSS:</h3>
+            <p>Odpowiada on za wygląd strony – kolory, czcionki, odstępy, układ elementów.
+            Dzięki CSS zwykły tekst może zamienić się w coś atrakcyjnego wizualnie.<br>
+            Przykład:</p>
+            <fieldset>
+            <code>
+            h1 {<br>
+            color: blue; <span>- zmiana koloru nagłówka</span><br>
+            text-align: center; <span>- wycentrowanie nagłówka</span><br>
+            font-family: Arial, sans-serif; <span>- zmiana czcionki nagłówka</span><br>
+            }<br>
+            p {<br>
+            color: #333; <span>- zmiana koloru akapitu</span><br>
+            font-size: 18px; <span>- zmiana wielkości liter akapitu</span><br>
+            }
+            </code>
+            </fieldset>
+        </div>
+
+        <br><br>
+        
+        
+        <div id="lista">
+            <h2>Dlaczego lubię programowanie?</h2>
+            <ol style="list-style-type: upper-roman;">
+                <li>Kreatywność
+                    <ul style="list-style-type: disc;">
+                        <li>Tworzenie stron daje mi możliwość wyrażania siebie. Każda linijka kodu to krok do stworzenia czegoś nowego i unikalnego.</li>
+                    </ul>
+                </li><br>
+                <li>Satysfakcja:
+                    <ul>
+                        <li>Gdy widzę, że moja strona działa i wygląda tak, jak chciałem – to daje ogromną radość.</li>
+                    </ul>
+                </li><br>
+                <li>Rozwój umiejętności:
+                    <ul style="list-style-type: disc;">
+                        <li>Programowanie uczy logicznego myślenia, cierpliwości i dokładności. Wiem, że te umiejętności przydadzą mi się też w innych dziedzinach życia.</li>
+                    </ul>
+                </li><br>
+                <li>Dzięki niemu także:
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>Mogę tworzyć coś własnego.</li>
+                        <li>Uczę się nowych technologii.</li>
+                        <li>Mam frajdę z testowania różnych efektów.</li>
+                        <li>Mogę się pochwalić swoimi projektami znajomym.</li>
+                    </ol>
+                </li>
+            </ol>
+
+        </div>
+
+        <br><br>
+
+        <h2>Tu jeszcz coś będzie</h2>
+        <hr>
+    </div>
+    
+</div>
+
+
+    <a href="#top" id="doGory">Skok do góry</a>
+</body>
+</html>
